@@ -1,0 +1,22 @@
+
+--== UNSUPPORTED POSTGRESQL CONFIGURATION ==--
+
+2012-03-28
+
+By default, OutBoard requires a MySQL database. However, a generous user 
+(Ben Cadieux <ben.cadieux@gmail.com>) has created a few replacement files
+that will allow OutBoard to run with a PostgreSQL database.
+
+Note: This is an UNSUPPORTED configuration. Please contact the above person
+if you have problems using it.
+
+To enable this support, look for these three files:
+
+lib/OutboardDatabase-postgresql.php
+include/create_tables-postgresql.php
+include/install-postgresql.php
+
+Then just rename them by removing '-postgresql' from the name. You should MAKE A BACKUP of
+the original (MySQL-based) files in case you need to use them later.
+
+

@@ -1,0 +1,4 @@
+php_value register_globals off
+
+# Uncomment the following line if you are using web server-based authentication
+#require valid-user

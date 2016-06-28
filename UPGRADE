@@ -1,0 +1,15 @@
+OUTBOARD UPGRADE INSTRUCTIONS
+=============================
+
+Generally, within major versions (i.e. going from 2.1.x to 2.2.x) this is the
+recommended upgrade path:
+
+1) Backup the database (phpMyAdmin makes this easy)
+2) Move the old installation directory to another name (for a backup, and in 
+   case something goes wrong)    Example: /outboard  ->  /outboard-OLD
+3) Install the new version in place of the old one (i.e. what it used to be
+   named.)   Example: /outboard
+4) Put your configuration choices into the new config.php file by using the
+   old one as a guide. Make sure the "installtables" option is set to false
+   (since you already have a database setup from the old installation.)
+
